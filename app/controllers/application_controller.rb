@@ -5,7 +5,7 @@ class ApplicationController < Sinatra::Base
   end
   
   get "/recipes"
-   @recipes = Recipe
+   @recipes = Recipe.all
 
   get "/recipes/new"
   
